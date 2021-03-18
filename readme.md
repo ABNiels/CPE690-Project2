@@ -5,7 +5,7 @@
 - clocktest -> prints time between calls to clock_gettime()
 - syscall   -> prints average time for a gettid call (n=1000)
 - pipeSW    -> Uses fork() and pipe() to try to find context switching time. Inaccurate.
-- futexSW   -> Uses shared memory to switch between threads. Heavily inspired by [Tsuna](https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html).
+- futexSW   -> Uses shared memory to switch between threads. Remove SINGLE_CORE definition at the top to run on all processors. Heavily inspired by [Tsuna](https://blog.tsunanet.net/2010/11/how-long-does-it-take-to-make-context.html).
 
 ### Problem 2
 - tlb       -> iterates over an array to find the average access time and TLB size. arguments are tlb [numpages][numtrials]
